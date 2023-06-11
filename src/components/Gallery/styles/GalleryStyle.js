@@ -22,6 +22,7 @@ export const PPreviews = styled.img`
   left: 1px;
   top: 1px;
   border-radius: 100px;
+  cursor: pointer;
 `;
 
 export const ProductImg = styled.div`
