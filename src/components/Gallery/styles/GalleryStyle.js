@@ -23,6 +23,7 @@ export const PPreviews = styled.img`
   top: 1px;
   border-radius: 100px;
   cursor: pointer;
+  object-fit: contain;
 `;
 
 export const ProductImg = styled.div`
@@ -33,4 +34,5 @@ export const Product = styled.img`
   display: flex;
   width: 590px;
   height: 711px;
+  object-fit: contain;
 `;
