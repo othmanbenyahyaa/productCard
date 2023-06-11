@@ -18,7 +18,7 @@ function App() {
     category: "WEIMAR - 40MM",
     montant: "2.299.000",
     description:
-      "Thiết kế Bauhaus tối giản của Weimar Otto được Curnon thể hiện trên nền của sự kết hợp màu sắc tinh tế và hiện đại. Cặp dây da màu Sand cùng chi tiết kim xanh chính là điểm nhấn giúp bạn kết hợp hoàn hảo với bất kì bộ trang phục nào.",
+      "The minimalistic Bauhaus design of Weimar Otto, created by Curnon, is showcased through a combination of sophisticated and modern color schemes. The Sand-colored leather strap paired with the green needle detail serves as a striking accent, allowing you to perfectly coordinate it with any outfit.",
   };
 
   return (

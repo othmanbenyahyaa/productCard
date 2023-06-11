@@ -6,28 +6,11 @@ import {
   PDetills,
   BrandLogo,
   PImages,
-  Previews,
-  PPreviews,
-  PreGroup,
-  ProductImg,
-  Product,
   PInfo,
-  PName,
-  PCategory,
-  PRating,
-  PPrice,
-  PText,
-  PMontant,
-  PDescription,
-  PButtons,
-  IconBtn,
-  Icon,
-  BtnText,
-  Btn,
-  BtnTxt,
 } from "./styles/CardStyle";
-import RatingImage from "../../assets/images/Frame 4.png";
-import ToteImage from "../../assets/images/Tote.png";
+import Buttons from "../Buttons";
+import Gallery from "../Gallery";
+import Detaile from "../Detaile";
 
 function Card({
   logo,
@@ -48,35 +31,22 @@ function Card({
         </PLogo>
         <PDetills>
           <PImages>
-            <Previews>
-              <PreGroup>
-                <PPreviews src={previwImg1} />
-                <PPreviews src={previwImg2} />
-                <PPreviews src={previwImg3} />
-              </PreGroup>
-            </Previews>
-            <ProductImg>
-              <Product src={productImg} />
-            </ProductImg>
+            <Gallery
+              productImg={productImg}
+              previwImg1={previwImg1}
+              previwImg2={previwImg2}
+              previwImg3={previwImg3}
+            />
           </PImages>
+
           <PInfo>
-            <PName>{productName}</PName>
-            <PCategory>{category}</PCategory>
-            <PRating src={RatingImage} alt="Rating" />
-            <PPrice>
-              <PText>PRICE:</PText>
-              <PMontant>{montant}đ</PMontant>
-            </PPrice>
-            <PDescription>{description}</PDescription>
-            <PButtons>
-              <IconBtn>
-                <Icon src={ToteImage} alt="tote" />
-                <BtnText>THÊM VÀO GIỎ</BtnText>
-              </IconBtn>
-              <Btn>
-                <BtnTxt>MUA NGAY</BtnTxt>
-              </Btn>
-            </PButtons>
+            <Detaile
+              productName={productName}
+              category={category}
+              montant={montant}
+              description={description}
+            />
+            <Buttons />
           </PInfo>
         </PDetills>
       </Section>
